@@ -40,7 +40,7 @@ public class UrlController {
         return new ResponseEntity<>(headers, HttpStatus.FOUND);
     }
 
-    @PostMapping("stat")
+    @GetMapping("stat")
     public List<UrlStatDTO> stat() {
         return urlService.getStatistics();
     }
